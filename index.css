@@ -1,0 +1,125 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+html {
+    font-size: 2em;
+}
+
+body {
+    overflow: hidden;
+}
+
+.page1,
+.page2,
+.page3,
+.page4 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-title {
+    padding: 3vmin 0;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    background: #353535;
+}
+
+.nextPage,
+#backToTop {
+    position: absolute;
+    bottom: 10vmin;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25vmin;
+    height: 10vmin;
+    font-size: 1rem;
+}
+
+.page1 {
+    transition: margin-top 1s ease-in-out;
+}
+
+.page2-container {
+    margin: 10vmin 5vmin;
+}
+
+.page2-container header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info img {
+    width: 10vmin;
+    height: 10vmin;
+}
+
+.attention {
+    padding: 1vmin 3vmin;
+    border: 0.1vmin solid black;
+    border-radius: 1vmin;
+}
+
+.content,
+.page2-container footer {
+    margin-top: 5vmin;
+}
+
+.page2-container footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.page2-container footer img {
+    width: 5vmin;
+    height: 5vmin;
+}
+
+@keyframes message-appear {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.message {
+    visibility: hidden;
+    width: 30vmin;
+    height: 7vmin;
+    line-height: 7vmin;
+    margin: 5vmin auto;
+    text-align: center;
+    border-radius: 1vmin;
+    background: #e0dede;
+}
+
+.page3-select {
+    width: 41vmin;
+    margin: auto;
+    font-size: 1.4rem;
+}
+
+.page3-select ul {
+    margin-top: 5vmin;
+    list-style: none;
+}
+
+.page3-select li + li {
+    margin-top: 5vmin;
+}
+
+.page3-select-item {
+    width: 3vmin;
+    height: 3vmin;
+}
